@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>INDEX TITLE</title>
+    </head>
+    <body>
+        <h1>Todo List App</h1>
+        <form action="{% url 'add' %}" method="post">
+            {% csrf_token %}
+            <label>Title</label><br>
+            <input type="text" name="title" id="title" /><br>
+            <label>Content</label><br>
+            <input type="text" name="content" id="content" /><br>
+            <label>Priority</label>
+            <select id="priority" name="priority">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            <br>
+            <input type="submit" value="Create">
+        </form>
+        <hr>
+        <h2>Priority 0</h2>
+        <ul>
+            {% for todo in todos %}
+            {% if todo.priority == 0 %}
+            <li>
+                <div>
+                    <form action="{% url 'delete' todo.id %}" method="post">
+                        {% csrf_token %}
+                        title: {{todo.title}}
+                        <br>
+                        Content: {{todo.content}}
+                        <br>
+                        Priority: {{todo.priority}}
+                        <br>
+                        Created on: {{todo.created_at}}
+                        <br>
+                        <input type="submit" value="Delete">
+                    </form>
+                </div>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+        <hr>
+        <h2>Priority 1</h2>
+        <ul>
+            {% for todo in todos %}
+            {% if todo.priority == 1 %}
+            <li>
+                <div>
+                    <form action="{% url 'delete' todo.id %}" method="post">
+                        {% csrf_token %}
+                        title: {{todo.title}}
+                        <br>
+                        Content: {{todo.content}}
+                        <br>
+                        Priority: {{todo.priority}}
+                        <br>
+                        Created on: {{todo.created_at}}
+                        <br>
+                        <input type="submit" value="Delete">
+                    </form>
+                </div>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+        <hr>
+        <h2>Priority 2</h2>
+        <ul>
+            {% for todo in todos %}
+            {% if todo.priority == 2 %}
+            <li>
+                <div>
+                    <form action="{% url 'delete' todo.id %}" method="post">
+                        {% csrf_token %}
+                        title: {{todo.title}}
+                        <br>
+                        Content: {{todo.content}}
+                        <br>
+                        Priority: {{todo.priority}}
+                        <br>
+                        Created on: {{todo.created_at}}
+                        <br>
+                        <input type="submit" value="Delete">
+                    </form>
+                </div>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </body>
+</html>
