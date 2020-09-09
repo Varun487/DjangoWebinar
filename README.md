@@ -1,4 +1,25 @@
-# Django Webinar
+# Django Webinar - Build a Todo App with me!
+
+## What the project looks like
+
+![Image of the project as it stands](./TodoListApp.png)
+
+## The Database
+
+#### Only 1 Table (model or class in django) called Todo
+
+| id | title | content | created_at | priority |
+|---|---|---|---|---|
+| 1 | Todo 1 | Todo 1 Content | Date time | 1 |
+| 2 | Todo 2 | Todo 2 Content | Date time | 2 |
+| 3 | Todo 3 | Todo 3 Content | Date time | 3 |
+| 4 | Todo 4 | Todo 4 Content | Date time | 1 |
+
+## Functionalities
+
+* `GET` - fetches all tasks present in the database and displays them according to their priority field
+* `ADD` - creates a new todo task and inserts it in the database
+* `DELETE` - Removes a specific task from the database
 
 ## Steps to replicate this project
 1. Virtual environment - https://docs.python.org/3/library/venv.html
