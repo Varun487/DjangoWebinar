@@ -36,13 +36,13 @@
 10. Basic hello world Http response view in todos app
 11. Add Urls in app
 12. Hello world test
-13. Create super user
+13. Create super user - `python3 manage.py createsuperuser`
 14. Create models
-15. make migrations
-16. migrate
+15. make migrations - `python3 manage.py makemigrations`
+16. migrate - `python3 manage.py migrate`
 17. Register model
-18. Show django admin tour
-19. Show python shell db tour
+18. Django admin tour
+19. Python shell DB tour - `python3 manage.py shell`
 20. Create template to get the data and show todos, render template in views.py
 21. Create/delete todos and show changes
 22. Create add todo form in template
