@@ -33,7 +33,7 @@
 6. Install Django via pip. Run command `pip3 install django` or `pip install django==<major>.<minor>.<patch>`
 7. To Start project, run `django-admin startproject <project-name>`
 8. `cd <project-name>` and then run `python3 manage.py runserver` and have a look at the basic welcome screen
-9. Create app todos - `python3 manage.py startapp todos`
+9. Create app todos - `python3 manage.py startapp <app-name>`
 10. Install app in settings.py and add routing to app in urls.py
 11. Basic hello world Http response view in todos app
 12. Add Urls in app
