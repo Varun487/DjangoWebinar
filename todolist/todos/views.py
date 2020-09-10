@@ -3,6 +3,8 @@ from django.shortcuts import render, redirect
 from .models import Todo
 
 # Create your views here.
+
+
 def index(request):
 
     # return HttpResponse('Hello from Index View!')
@@ -15,6 +17,7 @@ def index(request):
     }
 
     return render(request, 'index.html', context)
+
 
 def add(request):
     if request.method == 'POST':
@@ -30,6 +33,7 @@ def add(request):
         todo.save()
 
         return redirect('/todos')
+
 
 def delete(request, id):
     if request.method == 'POST':

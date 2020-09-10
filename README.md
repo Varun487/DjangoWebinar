@@ -29,8 +29,8 @@
 4. Activate it
    - In Terminal - `source <venv>/bin/activate`
    - In cmd.exe - `<venv>\Scripts\activate.bat`
-5. To avoid all future installations, you can run `pip3 install -r requirements.txt` after cloning the repository to get a virtual environment identical to mine
-6. Install Django via pip. Run command `pip3 install django` or `pip install django==<major>.<minor>.<patch>`
+5. Install Django via pip. Run command `pip3 install django` or `pip install django==<major>.<minor>.<patch>`.
+6. Push the dependencies / python-packages into the requirements.txt `pip3 freeze > requirements.txt`
 7. To Start project, run `django-admin startproject <project-name>`
 8. `cd <project-name>` and then run `python3 manage.py runserver` and have a look at the basic welcome screen
 9. Create app todos - `python3 manage.py startapp <app-name>`
@@ -39,25 +39,26 @@
 12. Add Urls in app
 13. Hello world test
 14. Create super user - `python3 manage.py createsuperuser`
-15. Create models
-16. make migrations - `python3 manage.py makemigrations`
-17. migrate - `python3 manage.py migrate`
-18. Register model
-19. Django admin tour
-20. Python shell DB tour - `python3 manage.py shell`
-21. Create template to get the data and show todos, render template in views.py
-22. Create/delete todos and show changes
-23. Create add todo form in template
-24. make add function in views.py
-25. Change urls.py
-26. Show add functionality and database changes
-27. Create delete todo form in template
-28. make delete function in views.py
-29. Change urls.py
-30. Show delete functionality and db changes
-31. Create Priority lists in templates
-32. Add CSS
+15. Django admin tour
+16. Create models
+17. make migrations - `python3 manage.py makemigrations`
+18. migrate - `python3 manage.py migrate`
+19. Register model
+20. Django admin tour
+21. Python shell DB tour - `python3 manage.py shell`
+22. Create template to get the data and show todos, render template in views.py
+23. Create/delete todos and show changes
+24. Create add todo form in template
+25. make add function in views.py
+26. Change urls.py
+27. Show add functionality and database changes
+28. Create delete todo form in template
+29. make delete function in views.py
+30. Change urls.py
+31. Show delete functionality and db changes
+32. Create Priority lists in templates
 
 For the Webinar:
 `<project-name>` = todolist
+
 `<app-name>` = todos
