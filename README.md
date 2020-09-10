@@ -59,5 +59,5 @@
 32. Add CSS
 
 For the Webinar:
-<project-name> = todolist
-<app-name> = todos
+`<project-name>` = todolist
+`<app-name>` = todos
