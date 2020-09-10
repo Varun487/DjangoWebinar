@@ -28,7 +28,7 @@
 4. Activate it
     * In Terminal - `source <venv>/bin/activate`
     * In cmd.exe - `<venv>\Scripts\activate.bat`
-5. To avoid all future installations, you can run `pip3 install -r requirements.txt` after cloning the repository to get an identical virtual environment to mine
+5. To avoid all future installations, you can run `pip3 install -r requirements.txt` after cloning the repository to get a virtual environment identical to mine
 5. Install Django via pip. Run command `pip3 install django`
 6. To Start project, run `django-admin startproject <project-name>`
 7. `cd <project-name>` and then run `python3 manage.py runserver` and have a look at the basic welcome screen
