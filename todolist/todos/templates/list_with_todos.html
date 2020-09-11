@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>INDEX TITLE</title>
+    </head>
+    <body>
+        <h1>Todo List App</h1>
+        <ul>
+            {% for todo in todos %}
+            <li>
+                <div>
+                    title: {{todo.title}}
+                    <br>
+                    Content: {{todo.content}}
+                    <br>
+                    Priority: {{todo.priority}}
+                    <br>
+                    Created on: {{todo.created_at}}
+                    <br>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

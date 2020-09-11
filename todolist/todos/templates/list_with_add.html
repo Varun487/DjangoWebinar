@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>INDEX TITLE</title>
+    </head>
+    <body>
+        <h1>Todo List App</h1>
+        <ul>
+            <form action="{% url 'add' %}" method="post">
+                {% csrf_token %}
+                <label>Title</label><br>
+                <input type="text" name="title" id="title" /><br>
+                <label>Content</label><br>
+                <input type="text" name="content" id="content" /><br>
+                <label>Priority</label>
+                <select id="priority" name="priority">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <br>
+                <input type="submit" value="Create">
+            </form>
+        <hr>
+            {% for todo in todos %}
+            <li>
+                <div>
+                    title: {{todo.title}}
+                    <br>
+                    Content: {{todo.content}}
+                    <br>
+                    Priority: {{todo.priority}}
+                    <br>
+                    Created on: {{todo.created_at}}
+                    <br>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
