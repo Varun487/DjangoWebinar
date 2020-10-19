@@ -1,8 +1,8 @@
 # Django Webinar - Build a Todo App with me!
 
-## This Webinar on YouTube
+## This Webinar is on YouTube
 
-![Watch the Video!](https://youtu.be/VOIeDYYYqns)
+[Watch the Video!](https://youtu.be/VOIeDYYYqns)
 
 ## What the project looks like
 
