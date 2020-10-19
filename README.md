@@ -1,8 +1,12 @@
 # Django Webinar - Build a Todo App with me!
 
+## This Webinar on YouTube
+
+![Watch the Video!](https://youtu.be/VOIeDYYYqns)
+
 ## What the project looks like
 
-![Image of the project as it stands](./TodoListApp.png)
+![Image of the project you'll build](./TodoListApp.png)
 
 ## The Database
 
